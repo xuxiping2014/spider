@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Class-Path: selenium-firefox-driver-3.6.0.jar selenium-ie-driver-3.6.0
+ .jar httpclient-4.5.3.jar gson-2.8.0.jar commons-lang3-3.6.jar common
+ s-codec-1.10.jar error_prone_annotations-2.0.18.jar jsr305-1.3.9.jar 
+ commons-logging-1.2.jar poi-3.14.jar j2objc-annotations-1.1.jar selen
+ ium-api-3.6.0.jar selenium-support-3.6.0.jar selenium-remote-driver-3
+ .6.0.jar selenium-safari-driver-3.6.0.jar animal-sniffer-annotations-
+ 1.14.jar selenium-edge-driver-3.6.0.jar commons-exec-1.3.jar selenium
+ -java-3.6.0.jar selenium-opera-driver-3.6.0.jar selenium-chrome-drive
+ r-3.6.0.jar byte-buddy-1.7.5.jar jna-4.1.0.jar httpcore-4.4.6.jar gua
+ va-23.0.jar log4j-1.2.17.jar jna-platform-4.1.0.jar
+Main-Class: com.xinyunlian.spider.YlfinSpiderMain
+

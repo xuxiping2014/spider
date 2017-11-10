@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinyunlian.spider.ancc.inter.GoodsModelMapper" >
+  <resultMap id="BaseResultMap" type="com.xinyunlian.spider.ancc.model.GoodsModel" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="product_code" property="productCode" jdbcType="VARCHAR" />
+    <result column="item_name" property="itemName" jdbcType="VARCHAR" />
+    <result column="item_specification" property="itemSpecification" jdbcType="VARCHAR" />
+    <result column="brand_name" property="brandName" jdbcType="VARCHAR" />
+    <result column="item_packaging_typecode" property="itemPackagingTypecode" jdbcType="VARCHAR" />
+    <result column="item_netcontent" property="itemNetcontent" jdbcType="VARCHAR" />
+    <result column="item_description" property="itemDescription" jdbcType="VARCHAR" />
+    <result column="item_width" property="itemWidth" jdbcType="VARCHAR" />
+    <result column="item_height" property="itemHeight" jdbcType="VARCHAR" />
+    <result column="item_depth" property="itemDepth" jdbcType="VARCHAR" />
+    <result column="item_grossweight" property="itemGrossweight" jdbcType="VARCHAR" />
+    <result column="item_netweight" property="itemNetweight" jdbcType="VARCHAR" />
+    <result column="item_classcode" property="itemClasscode" jdbcType="VARCHAR" />
+    <result column="item_shortdescription" property="itemShortdescription" jdbcType="VARCHAR" />
+    <result column="item_packagingmaterial_code" property="itemPackagingmaterialCode" jdbcType="VARCHAR" />
+    <result column="firm_name" property="firmName" jdbcType="VARCHAR" />
+    <result column="firm_address" property="firmAddress" jdbcType="VARCHAR" />
+    <result column="firm_status" property="firmStatus" jdbcType="VARCHAR" />
+    <result column="firm_contactman" property="firmContactman" jdbcType="VARCHAR" />
+    <result column="firm_contactphone" property="firmContactphone" jdbcType="VARCHAR" />
+    <result column="firm_login_date" property="firmLoginDate" jdbcType="DATE" />
+    <result column="firm_valid_date" property="firmValidDate" jdbcType="DATE" />
+    <result column="firm_logout_date" property="firmLogoutDate" jdbcType="DATE" />
+    <result column="firm_logout_date1" property="firmLogoutDate1" jdbcType="DATE" />
+    <result column="qualification_count" property="qualificationCount" jdbcType="VARCHAR" />
+    <result column="product_ex" property="productEx" jdbcType="VARCHAR" />
+    <result column="alerm_count" property="alermCount" jdbcType="VARCHAR" />
+    <result column="keepon_record" property="keeponRecord" jdbcType="VARCHAR" />
+    <result column="recall_count" property="recallCount" jdbcType="VARCHAR" />
+    <result column="productFangWei" property="productfangwei" jdbcType="VARCHAR" />
+    <result column="diffYearsMonthsDays" property="diffyearsmonthsdays" jdbcType="VARCHAR" />
+    <result column="qs" property="qs" jdbcType="VARCHAR" />
+    <result column="batch" property="batch" jdbcType="VARCHAR" />
+    <result column="honest_count" property="honestCount" jdbcType="VARCHAR" />
+    <result column="shop_id" property="shopId" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="DATE" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, product_code, item_name, item_specification, brand_name, item_packaging_typecode, 
+    item_netcontent, item_description, item_width, item_height, item_depth, item_grossweight, 
+    item_netweight, item_classcode, item_shortdescription, item_packagingmaterial_code, 
+    firm_name, firm_address, firm_status, firm_contactman, firm_contactphone, firm_login_date, 
+    firm_valid_date, firm_logout_date, firm_logout_date1, qualification_count, product_ex, 
+    alerm_count, keepon_record, recall_count, productFangWei, diffYearsMonthsDays, qs, 
+    batch, honest_count, shop_id, create_date, status
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.xinyunlian.spider.ancc.model.GoodsModelExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from p_goods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from p_goods
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from p_goods
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.xinyunlian.spider.ancc.model.GoodsModelExample" >
+    delete from p_goods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.xinyunlian.spider.ancc.model.GoodsModel" >
+    insert into p_goods (id, product_code, item_name, 
+      item_specification, brand_name, item_packaging_typecode, 
+      item_netcontent, item_description, item_width, 
+      item_height, item_depth, item_grossweight, 
+      item_netweight, item_classcode, item_shortdescription, 
+      item_packagingmaterial_code, firm_name, firm_address, 
+      firm_status, firm_contactman, firm_contactphone, 
+      firm_login_date, firm_valid_date, firm_logout_date, 
+      firm_logout_date1, qualification_count, product_ex, 
+      alerm_count, keepon_record, recall_count, 
+      productFangWei, diffYearsMonthsDays, qs, 
+      batch, honest_count, shop_id, 
+      create_date, status)
+    values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=VARCHAR}, #{itemName,jdbcType=VARCHAR}, 
+      #{itemSpecification,jdbcType=VARCHAR}, #{brandName,jdbcType=VARCHAR}, #{itemPackagingTypecode,jdbcType=VARCHAR}, 
+      #{itemNetcontent,jdbcType=VARCHAR}, #{itemDescription,jdbcType=VARCHAR}, #{itemWidth,jdbcType=VARCHAR}, 
+      #{itemHeight,jdbcType=VARCHAR}, #{itemDepth,jdbcType=VARCHAR}, #{itemGrossweight,jdbcType=VARCHAR}, 
+      #{itemNetweight,jdbcType=VARCHAR}, #{itemClasscode,jdbcType=VARCHAR}, #{itemShortdescription,jdbcType=VARCHAR}, 
+      #{itemPackagingmaterialCode,jdbcType=VARCHAR}, #{firmName,jdbcType=VARCHAR}, #{firmAddress,jdbcType=VARCHAR}, 
+      #{firmStatus,jdbcType=VARCHAR}, #{firmContactman,jdbcType=VARCHAR}, #{firmContactphone,jdbcType=VARCHAR}, 
+      #{firmLoginDate,jdbcType=DATE}, #{firmValidDate,jdbcType=DATE}, #{firmLogoutDate,jdbcType=DATE}, 
+      #{firmLogoutDate1,jdbcType=DATE}, #{qualificationCount,jdbcType=VARCHAR}, #{productEx,jdbcType=VARCHAR}, 
+      #{alermCount,jdbcType=VARCHAR}, #{keeponRecord,jdbcType=VARCHAR}, #{recallCount,jdbcType=VARCHAR}, 
+      #{productfangwei,jdbcType=VARCHAR}, #{diffyearsmonthsdays,jdbcType=VARCHAR}, #{qs,jdbcType=VARCHAR}, 
+      #{batch,jdbcType=VARCHAR}, #{honestCount,jdbcType=VARCHAR}, #{shopId,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=DATE}, #{status,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xinyunlian.spider.ancc.model.GoodsModel" >
+    insert into p_goods
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="productCode != null" >
+        product_code,
+      </if>
+      <if test="itemName != null" >
+        item_name,
+      </if>
+      <if test="itemSpecification != null" >
+        item_specification,
+      </if>
+      <if test="brandName != null" >
+        brand_name,
+      </if>
+      <if test="itemPackagingTypecode != null" >
+        item_packaging_typecode,
+      </if>
+      <if test="itemNetcontent != null" >
+        item_netcontent,
+      </if>
+      <if test="itemDescription != null" >
+        item_description,
+      </if>
+      <if test="itemWidth != null" >
+        item_width,
+      </if>
+      <if test="itemHeight != null" >
+        item_height,
+      </if>
+      <if test="itemDepth != null" >
+        item_depth,
+      </if>
+      <if test="itemGrossweight != null" >
+        item_grossweight,
+      </if>
+      <if test="itemNetweight != null" >
+        item_netweight,
+      </if>
+      <if test="itemClasscode != null" >
+        item_classcode,
+      </if>
+      <if test="itemShortdescription != null" >
+        item_shortdescription,
+      </if>
+      <if test="itemPackagingmaterialCode != null" >
+        item_packagingmaterial_code,
+      </if>
+      <if test="firmName != null" >
+        firm_name,
+      </if>
+      <if test="firmAddress != null" >
+        firm_address,
+      </if>
+      <if test="firmStatus != null" >
+        firm_status,
+      </if>
+      <if test="firmContactman != null" >
+        firm_contactman,
+      </if>
+      <if test="firmContactphone != null" >
+        firm_contactphone,
+      </if>
+      <if test="firmLoginDate != null" >
+        firm_login_date,
+      </if>
+      <if test="firmValidDate != null" >
+        firm_valid_date,
+      </if>
+      <if test="firmLogoutDate != null" >
+        firm_logout_date,
+      </if>
+      <if test="firmLogoutDate1 != null" >
+        firm_logout_date1,
+      </if>
+      <if test="qualificationCount != null" >
+        qualification_count,
+      </if>
+      <if test="productEx != null" >
+        product_ex,
+      </if>
+      <if test="alermCount != null" >
+        alerm_count,
+      </if>
+      <if test="keeponRecord != null" >
+        keepon_record,
+      </if>
+      <if test="recallCount != null" >
+        recall_count,
+      </if>
+      <if test="productfangwei != null" >
+        productFangWei,
+      </if>
+      <if test="diffyearsmonthsdays != null" >
+        diffYearsMonthsDays,
+      </if>
+      <if test="qs != null" >
+        qs,
+      </if>
+      <if test="batch != null" >
+        batch,
+      </if>
+      <if test="honestCount != null" >
+        honest_count,
+      </if>
+      <if test="shopId != null" >
+        shop_id,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="productCode != null" >
+        #{productCode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemName != null" >
+        #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="itemSpecification != null" >
+        #{itemSpecification,jdbcType=VARCHAR},
+      </if>
+      <if test="brandName != null" >
+        #{brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPackagingTypecode != null" >
+        #{itemPackagingTypecode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemNetcontent != null" >
+        #{itemNetcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDescription != null" >
+        #{itemDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="itemWidth != null" >
+        #{itemWidth,jdbcType=VARCHAR},
+      </if>
+      <if test="itemHeight != null" >
+        #{itemHeight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDepth != null" >
+        #{itemDepth,jdbcType=VARCHAR},
+      </if>
+      <if test="itemGrossweight != null" >
+        #{itemGrossweight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemNetweight != null" >
+        #{itemNetweight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemClasscode != null" >
+        #{itemClasscode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemShortdescription != null" >
+        #{itemShortdescription,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPackagingmaterialCode != null" >
+        #{itemPackagingmaterialCode,jdbcType=VARCHAR},
+      </if>
+      <if test="firmName != null" >
+        #{firmName,jdbcType=VARCHAR},
+      </if>
+      <if test="firmAddress != null" >
+        #{firmAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="firmStatus != null" >
+        #{firmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="firmContactman != null" >
+        #{firmContactman,jdbcType=VARCHAR},
+      </if>
+      <if test="firmContactphone != null" >
+        #{firmContactphone,jdbcType=VARCHAR},
+      </if>
+      <if test="firmLoginDate != null" >
+        #{firmLoginDate,jdbcType=DATE},
+      </if>
+      <if test="firmValidDate != null" >
+        #{firmValidDate,jdbcType=DATE},
+      </if>
+      <if test="firmLogoutDate != null" >
+        #{firmLogoutDate,jdbcType=DATE},
+      </if>
+      <if test="firmLogoutDate1 != null" >
+        #{firmLogoutDate1,jdbcType=DATE},
+      </if>
+      <if test="qualificationCount != null" >
+        #{qualificationCount,jdbcType=VARCHAR},
+      </if>
+      <if test="productEx != null" >
+        #{productEx,jdbcType=VARCHAR},
+      </if>
+      <if test="alermCount != null" >
+        #{alermCount,jdbcType=VARCHAR},
+      </if>
+      <if test="keeponRecord != null" >
+        #{keeponRecord,jdbcType=VARCHAR},
+      </if>
+      <if test="recallCount != null" >
+        #{recallCount,jdbcType=VARCHAR},
+      </if>
+      <if test="productfangwei != null" >
+        #{productfangwei,jdbcType=VARCHAR},
+      </if>
+      <if test="diffyearsmonthsdays != null" >
+        #{diffyearsmonthsdays,jdbcType=VARCHAR},
+      </if>
+      <if test="qs != null" >
+        #{qs,jdbcType=VARCHAR},
+      </if>
+      <if test="batch != null" >
+        #{batch,jdbcType=VARCHAR},
+      </if>
+      <if test="honestCount != null" >
+        #{honestCount,jdbcType=VARCHAR},
+      </if>
+      <if test="shopId != null" >
+        #{shopId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=DATE},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.xinyunlian.spider.ancc.model.GoodsModelExample" resultType="java.lang.Integer" >
+    select count(*) from p_goods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update p_goods
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.productCode != null" >
+        product_code = #{record.productCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemName != null" >
+        item_name = #{record.itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemSpecification != null" >
+        item_specification = #{record.itemSpecification,jdbcType=VARCHAR},
+      </if>
+      <if test="record.brandName != null" >
+        brand_name = #{record.brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemPackagingTypecode != null" >
+        item_packaging_typecode = #{record.itemPackagingTypecode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemNetcontent != null" >
+        item_netcontent = #{record.itemNetcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemDescription != null" >
+        item_description = #{record.itemDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemWidth != null" >
+        item_width = #{record.itemWidth,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemHeight != null" >
+        item_height = #{record.itemHeight,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemDepth != null" >
+        item_depth = #{record.itemDepth,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemGrossweight != null" >
+        item_grossweight = #{record.itemGrossweight,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemNetweight != null" >
+        item_netweight = #{record.itemNetweight,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemClasscode != null" >
+        item_classcode = #{record.itemClasscode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemShortdescription != null" >
+        item_shortdescription = #{record.itemShortdescription,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemPackagingmaterialCode != null" >
+        item_packagingmaterial_code = #{record.itemPackagingmaterialCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmName != null" >
+        firm_name = #{record.firmName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmAddress != null" >
+        firm_address = #{record.firmAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmStatus != null" >
+        firm_status = #{record.firmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmContactman != null" >
+        firm_contactman = #{record.firmContactman,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmContactphone != null" >
+        firm_contactphone = #{record.firmContactphone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firmLoginDate != null" >
+        firm_login_date = #{record.firmLoginDate,jdbcType=DATE},
+      </if>
+      <if test="record.firmValidDate != null" >
+        firm_valid_date = #{record.firmValidDate,jdbcType=DATE},
+      </if>
+      <if test="record.firmLogoutDate != null" >
+        firm_logout_date = #{record.firmLogoutDate,jdbcType=DATE},
+      </if>
+      <if test="record.firmLogoutDate1 != null" >
+        firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=DATE},
+      </if>
+      <if test="record.qualificationCount != null" >
+        qualification_count = #{record.qualificationCount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productEx != null" >
+        product_ex = #{record.productEx,jdbcType=VARCHAR},
+      </if>
+      <if test="record.alermCount != null" >
+        alerm_count = #{record.alermCount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.keeponRecord != null" >
+        keepon_record = #{record.keeponRecord,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recallCount != null" >
+        recall_count = #{record.recallCount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productfangwei != null" >
+        productFangWei = #{record.productfangwei,jdbcType=VARCHAR},
+      </if>
+      <if test="record.diffyearsmonthsdays != null" >
+        diffYearsMonthsDays = #{record.diffyearsmonthsdays,jdbcType=VARCHAR},
+      </if>
+      <if test="record.qs != null" >
+        qs = #{record.qs,jdbcType=VARCHAR},
+      </if>
+      <if test="record.batch != null" >
+        batch = #{record.batch,jdbcType=VARCHAR},
+      </if>
+      <if test="record.honestCount != null" >
+        honest_count = #{record.honestCount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shopId != null" >
+        shop_id = #{record.shopId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createDate != null" >
+        create_date = #{record.createDate,jdbcType=DATE},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update p_goods
+    set id = #{record.id,jdbcType=INTEGER},
+      product_code = #{record.productCode,jdbcType=VARCHAR},
+      item_name = #{record.itemName,jdbcType=VARCHAR},
+      item_specification = #{record.itemSpecification,jdbcType=VARCHAR},
+      brand_name = #{record.brandName,jdbcType=VARCHAR},
+      item_packaging_typecode = #{record.itemPackagingTypecode,jdbcType=VARCHAR},
+      item_netcontent = #{record.itemNetcontent,jdbcType=VARCHAR},
+      item_description = #{record.itemDescription,jdbcType=VARCHAR},
+      item_width = #{record.itemWidth,jdbcType=VARCHAR},
+      item_height = #{record.itemHeight,jdbcType=VARCHAR},
+      item_depth = #{record.itemDepth,jdbcType=VARCHAR},
+      item_grossweight = #{record.itemGrossweight,jdbcType=VARCHAR},
+      item_netweight = #{record.itemNetweight,jdbcType=VARCHAR},
+      item_classcode = #{record.itemClasscode,jdbcType=VARCHAR},
+      item_shortdescription = #{record.itemShortdescription,jdbcType=VARCHAR},
+      item_packagingmaterial_code = #{record.itemPackagingmaterialCode,jdbcType=VARCHAR},
+      firm_name = #{record.firmName,jdbcType=VARCHAR},
+      firm_address = #{record.firmAddress,jdbcType=VARCHAR},
+      firm_status = #{record.firmStatus,jdbcType=VARCHAR},
+      firm_contactman = #{record.firmContactman,jdbcType=VARCHAR},
+      firm_contactphone = #{record.firmContactphone,jdbcType=VARCHAR},
+      firm_login_date = #{record.firmLoginDate,jdbcType=DATE},
+      firm_valid_date = #{record.firmValidDate,jdbcType=DATE},
+      firm_logout_date = #{record.firmLogoutDate,jdbcType=DATE},
+      firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=DATE},
+      qualification_count = #{record.qualificationCount,jdbcType=VARCHAR},
+      product_ex = #{record.productEx,jdbcType=VARCHAR},
+      alerm_count = #{record.alermCount,jdbcType=VARCHAR},
+      keepon_record = #{record.keeponRecord,jdbcType=VARCHAR},
+      recall_count = #{record.recallCount,jdbcType=VARCHAR},
+      productFangWei = #{record.productfangwei,jdbcType=VARCHAR},
+      diffYearsMonthsDays = #{record.diffyearsmonthsdays,jdbcType=VARCHAR},
+      qs = #{record.qs,jdbcType=VARCHAR},
+      batch = #{record.batch,jdbcType=VARCHAR},
+      honest_count = #{record.honestCount,jdbcType=VARCHAR},
+      shop_id = #{record.shopId,jdbcType=VARCHAR},
+      create_date = #{record.createDate,jdbcType=DATE},
+      status = #{record.status,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xinyunlian.spider.ancc.model.GoodsModel" >
+    update p_goods
+    <set >
+      <if test="productCode != null" >
+        product_code = #{productCode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemName != null" >
+        item_name = #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="itemSpecification != null" >
+        item_specification = #{itemSpecification,jdbcType=VARCHAR},
+      </if>
+      <if test="brandName != null" >
+        brand_name = #{brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPackagingTypecode != null" >
+        item_packaging_typecode = #{itemPackagingTypecode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemNetcontent != null" >
+        item_netcontent = #{itemNetcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDescription != null" >
+        item_description = #{itemDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="itemWidth != null" >
+        item_width = #{itemWidth,jdbcType=VARCHAR},
+      </if>
+      <if test="itemHeight != null" >
+        item_height = #{itemHeight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDepth != null" >
+        item_depth = #{itemDepth,jdbcType=VARCHAR},
+      </if>
+      <if test="itemGrossweight != null" >
+        item_grossweight = #{itemGrossweight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemNetweight != null" >
+        item_netweight = #{itemNetweight,jdbcType=VARCHAR},
+      </if>
+      <if test="itemClasscode != null" >
+        item_classcode = #{itemClasscode,jdbcType=VARCHAR},
+      </if>
+      <if test="itemShortdescription != null" >
+        item_shortdescription = #{itemShortdescription,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPackagingmaterialCode != null" >
+        item_packagingmaterial_code = #{itemPackagingmaterialCode,jdbcType=VARCHAR},
+      </if>
+      <if test="firmName != null" >
+        firm_name = #{firmName,jdbcType=VARCHAR},
+      </if>
+      <if test="firmAddress != null" >
+        firm_address = #{firmAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="firmStatus != null" >
+        firm_status = #{firmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="firmContactman != null" >
+        firm_contactman = #{firmContactman,jdbcType=VARCHAR},
+      </if>
+      <if test="firmContactphone != null" >
+        firm_contactphone = #{firmContactphone,jdbcType=VARCHAR},
+      </if>
+      <if test="firmLoginDate != null" >
+        firm_login_date = #{firmLoginDate,jdbcType=DATE},
+      </if>
+      <if test="firmValidDate != null" >
+        firm_valid_date = #{firmValidDate,jdbcType=DATE},
+      </if>
+      <if test="firmLogoutDate != null" >
+        firm_logout_date = #{firmLogoutDate,jdbcType=DATE},
+      </if>
+      <if test="firmLogoutDate1 != null" >
+        firm_logout_date1 = #{firmLogoutDate1,jdbcType=DATE},
+      </if>
+      <if test="qualificationCount != null" >
+        qualification_count = #{qualificationCount,jdbcType=VARCHAR},
+      </if>
+      <if test="productEx != null" >
+        product_ex = #{productEx,jdbcType=VARCHAR},
+      </if>
+      <if test="alermCount != null" >
+        alerm_count = #{alermCount,jdbcType=VARCHAR},
+      </if>
+      <if test="keeponRecord != null" >
+        keepon_record = #{keeponRecord,jdbcType=VARCHAR},
+      </if>
+      <if test="recallCount != null" >
+        recall_count = #{recallCount,jdbcType=VARCHAR},
+      </if>
+      <if test="productfangwei != null" >
+        productFangWei = #{productfangwei,jdbcType=VARCHAR},
+      </if>
+      <if test="diffyearsmonthsdays != null" >
+        diffYearsMonthsDays = #{diffyearsmonthsdays,jdbcType=VARCHAR},
+      </if>
+      <if test="qs != null" >
+        qs = #{qs,jdbcType=VARCHAR},
+      </if>
+      <if test="batch != null" >
+        batch = #{batch,jdbcType=VARCHAR},
+      </if>
+      <if test="honestCount != null" >
+        honest_count = #{honestCount,jdbcType=VARCHAR},
+      </if>
+      <if test="shopId != null" >
+        shop_id = #{shopId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=DATE},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xinyunlian.spider.ancc.model.GoodsModel" >
+    update p_goods
+    set product_code = #{productCode,jdbcType=VARCHAR},
+      item_name = #{itemName,jdbcType=VARCHAR},
+      item_specification = #{itemSpecification,jdbcType=VARCHAR},
+      brand_name = #{brandName,jdbcType=VARCHAR},
+      item_packaging_typecode = #{itemPackagingTypecode,jdbcType=VARCHAR},
+      item_netcontent = #{itemNetcontent,jdbcType=VARCHAR},
+      item_description = #{itemDescription,jdbcType=VARCHAR},
+      item_width = #{itemWidth,jdbcType=VARCHAR},
+      item_height = #{itemHeight,jdbcType=VARCHAR},
+      item_depth = #{itemDepth,jdbcType=VARCHAR},
+      item_grossweight = #{itemGrossweight,jdbcType=VARCHAR},
+      item_netweight = #{itemNetweight,jdbcType=VARCHAR},
+      item_classcode = #{itemClasscode,jdbcType=VARCHAR},
+      item_shortdescription = #{itemShortdescription,jdbcType=VARCHAR},
+      item_packagingmaterial_code = #{itemPackagingmaterialCode,jdbcType=VARCHAR},
+      firm_name = #{firmName,jdbcType=VARCHAR},
+      firm_address = #{firmAddress,jdbcType=VARCHAR},
+      firm_status = #{firmStatus,jdbcType=VARCHAR},
+      firm_contactman = #{firmContactman,jdbcType=VARCHAR},
+      firm_contactphone = #{firmContactphone,jdbcType=VARCHAR},
+      firm_login_date = #{firmLoginDate,jdbcType=DATE},
+      firm_valid_date = #{firmValidDate,jdbcType=DATE},
+      firm_logout_date = #{firmLogoutDate,jdbcType=DATE},
+      firm_logout_date1 = #{firmLogoutDate1,jdbcType=DATE},
+      qualification_count = #{qualificationCount,jdbcType=VARCHAR},
+      product_ex = #{productEx,jdbcType=VARCHAR},
+      alerm_count = #{alermCount,jdbcType=VARCHAR},
+      keepon_record = #{keeponRecord,jdbcType=VARCHAR},
+      recall_count = #{recallCount,jdbcType=VARCHAR},
+      productFangWei = #{productfangwei,jdbcType=VARCHAR},
+      diffYearsMonthsDays = #{diffyearsmonthsdays,jdbcType=VARCHAR},
+      qs = #{qs,jdbcType=VARCHAR},
+      batch = #{batch,jdbcType=VARCHAR},
+      honest_count = #{honestCount,jdbcType=VARCHAR},
+      shop_id = #{shopId,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=DATE},
+      status = #{status,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

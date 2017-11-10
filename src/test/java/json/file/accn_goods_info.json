@@ -1,0 +1,105 @@
+{
+  "c": "200",
+  "d": {
+    "FirmValidDate": "1/31/2019 12:00:00 AM",
+    "ItemPackagingTypeCode": "",
+    "ItemSpecification": "20支/盒",
+    "ItemNetContent": "0",
+    "FirmLoginDate": "1/31/2005 12:00:00 AM",
+    "arrayOfKeyValue": {
+      "keyValue": [
+        {
+          "attName": "MSRP",
+          "attValue": "0"
+        }
+      ]
+    },
+    "productEx": null,
+    "Image": [
+      {
+        "Imageurl": "http://www.anccnet.com/userfile/ecdata/studio/m201707231517495953518236.jpg",
+        "ImageDescription": ""
+      },
+      {
+        "Imageurl": "http://www.anccnet.com/userfile/ecdata/studio/m201707231517499852746951.jpg",
+        "ImageDescription": ""
+      },
+      {
+        "Imageurl": "http://www.anccnet.com/userfile/ecdata/studio/m201707231517503128426998.jpg",
+        "ImageDescription": ""
+      }
+    ],
+    "ItemDescription": "http://www.gds.org.cn/goods.aspx?base_id=F25F56A9F703ED7497951CC331D2E0BF60C875DEDE18232D05F56E6F00C7E2732F5621C125438054",
+    "alermCount": "0",
+    "keepOnRecord": "",
+    "ItemWidth": "56CM",
+    "BrandName": "利群",
+    "recallCount": "0",
+    "ItemHeight": "90CM",
+    "ItemGrossWeight": "26",
+    "qualificationCount": "0",
+    "FirmStatus": "有效",
+    "ItemNetWeight": "0",
+    "ItemPackagingMaterialCode": "",
+    "ItemName": "利群（新版小包）",
+    "productFangWei": null,
+    "FirmContactMan": "丁蔚",
+    "ItemDepth": "23CM",
+    "FirmContactPhone": "81188270",
+    "diffYearsMonthsDays": "[12,9,8]",
+    "QS": [],
+    "ItemClassCode": "50211502",
+    "FirmName": "浙江中烟工业有限责任公司",
+    "FirmAddress": "浙江省杭州市中山南路77号",
+    "cosmeticList": [],
+    "batch": "",
+    "FirmLogoutDate1": "",
+    "honestCount": "0",
+    "productCode": "06901028118170",
+    "ItemShortDescription": "",
+    "FirmLogoutDate": ""
+  }
+};
+
+{
+  "c": "200",
+  "d": {
+    "FirmValidDate": "4/24/2018 12:00:00 AM",
+    "ItemPackagingTypeCode": "",
+    "ItemSpecification": "",
+    "ItemNetContent": "",
+    "FirmLoginDate": "4/24/2012 12:00:00 AM",
+    "arrayOfKeyValue": null,
+    "productEx": null,
+    "Image": [],
+    "ItemDescription": "",
+    "alermCount": "0",
+    "keepOnRecord": "",
+    "ItemWidth": "",
+    "BrandName": "",
+    "recallCount": "0",
+    "ItemHeight": "",
+    "ItemGrossWeight": "",
+    "qualificationCount": "0",
+    "FirmStatus": "有效",
+    "ItemNetWeight": "",
+    "ItemPackagingMaterialCode": "",
+    "ItemName": "无",
+    "productFangWei": null,
+    "FirmContactMan": "林青理",
+    "ItemDepth": "",
+    "FirmContactPhone": "0",
+    "diffYearsMonthsDays": "[5,6,16]",
+    "QS": [],
+    "ItemClassCode": "",
+    "FirmName": "台州市椒江麒安塑料厂",
+    "FirmAddress": "浙江省台州市椒江区洪家街道港头徐村1-54号",
+    "cosmeticList": [],
+    "batch": "",
+    "FirmLogoutDate1": "",
+    "honestCount": "0",
+    "productCode": "06956572000129",
+    "ItemShortDescription": "",
+    "FirmLogoutDate": ""
+  }
+}
