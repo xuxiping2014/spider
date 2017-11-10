@@ -35487,3 +35487,450 @@ Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozpro
 Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
 *** Element info: {Using=css selector, value=div.graph-title}
 [2017-11-10 14:39:22] [INFO] 没有查询到该商品[6938078700833]信息
+[2017-11-10 14:39:28] [INFO] 第[225]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:39:28] [INFO] 载入商品信息界面
+[2017-11-10 14:39:28] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:39:28] [INFO] 没有查询到该商品[6938078788787]信息
+[2017-11-10 14:39:33] [INFO] 第[226]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:39:33] [INFO] 载入商品信息界面
+[2017-11-10 14:39:35] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:39:35] [INFO] 没有查询到该商品[6938078700833]信息
+[2017-11-10 14:39:40] [INFO] 第[227]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:39:40] [INFO] 载入商品信息界面
+[2017-11-10 14:39:42] [INFO] 查询到信息:佳洁士 草本水晶啫喱牙膏 90g 清爽薄荷
+[2017-11-10 14:39:42] [INFO] 更新数据库数据信息
+[2017-11-10 14:39:48] [INFO] 第[228]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:39:48] [INFO] 载入商品信息界面
+[2017-11-10 14:39:49] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:39:49] [INFO] 没有查询到该商品[6938078700833]信息
+[2017-11-10 14:39:55] [INFO] 第[229]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:39:55] [INFO] 载入商品信息界面
+[2017-11-10 14:39:57] [INFO] 查询到信息:佳洁士(Crest) 盐白牙膏(清凉薄荷香型)90g(天然盐 亮白牙齿 防蛀)
+[2017-11-10 14:39:57] [INFO] 更新数据库数据信息
+[2017-11-10 14:40:03] [INFO] 第[230]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:03] [INFO] 载入商品信息界面
+[2017-11-10 14:40:05] [INFO] 查询到信息:佳洁士(Crest) 盐白牙膏(清凉薄荷香型)90g(天然盐 亮白牙齿 防蛀)
+[2017-11-10 14:40:05] [INFO] 更新数据库数据信息
+[2017-11-10 14:40:11] [INFO] 第[231]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:11] [INFO] 载入商品信息界面
+[2017-11-10 14:40:22] [INFO] 查询到信息:佳洁士 双效炫白牙膏 120g 4月新包装
+[2017-11-10 14:40:22] [INFO] 更新数据库数据信息
+[2017-11-10 14:40:27] [INFO] 第[232]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:27] [INFO] 载入商品信息界面
+[2017-11-10 14:40:29] [INFO] 查询到信息:中华健齿白炫动果香味105g
+[2017-11-10 14:40:29] [INFO] 更新数据库数据信息
+[2017-11-10 14:40:35] [INFO] 第[233]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:35] [INFO] 载入商品信息界面
+[2017-11-10 14:40:40] [INFO] 查询到信息:Colgate 高露洁 360°全面口腔健康美白牙膏 90g
+[2017-11-10 14:40:40] [INFO] 更新数据库数据信息
+[2017-11-10 14:40:45] [INFO] 第[234]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:45] [INFO] 载入商品信息界面
+[2017-11-10 14:40:48] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:40:48] [INFO] 没有查询到该商品[6951420918106]信息
+[2017-11-10 14:40:53] [INFO] 第[235]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:40:53] [INFO] 载入商品信息界面
+[2017-11-10 14:40:55] [INFO] 查询到信息:Colgate 高露洁 备长炭纤柔超细软毛牙刷 单支装 颜色随机
+[2017-11-10 14:40:55] [INFO] 更新数据库数据信息
+[2017-11-10 14:41:00] [INFO] 第[236]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:00] [INFO] 载入商品信息界面
+[2017-11-10 14:41:00] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:00] [INFO] 没有查询到该商品[6921222206619]信息
+[2017-11-10 14:41:06] [INFO] 第[237]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:06] [INFO] 载入商品信息界面
+[2017-11-10 14:41:07] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:07] [INFO] 没有查询到该商品[6921222206619]信息
+[2017-11-10 14:41:13] [INFO] 第[238]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:13] [INFO] 载入商品信息界面
+[2017-11-10 14:41:14] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:14] [INFO] 没有查询到该商品[6921222206619]信息
+[2017-11-10 14:41:19] [INFO] 第[239]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:19] [INFO] 载入商品信息界面
+[2017-11-10 14:41:20] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:20] [INFO] 没有查询到该商品[6921222206619]信息
+[2017-11-10 14:41:26] [INFO] 第[240]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:26] [INFO] 载入商品信息界面
+[2017-11-10 14:41:27] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:27] [INFO] 没有查询到该商品[6921222206619]信息
+[2017-11-10 14:41:33] [INFO] 第[241]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:33] [INFO] 载入商品信息界面
+[2017-11-10 14:41:35] [INFO] 查询到信息:徐福记 400牛轧糖
+[2017-11-10 14:41:35] [INFO] 更新数据库数据信息
+[2017-11-10 14:41:41] [INFO] 第[242]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:41] [INFO] 载入商品信息界面
+[2017-11-10 14:41:42] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:42] [INFO] 没有查询到该商品[6931140289380]信息
+[2017-11-10 14:41:47] [INFO] 第[243]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:47] [INFO] 载入商品信息界面
+[2017-11-10 14:41:48] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:48] [INFO] 没有查询到该商品[6931140289380]信息
+[2017-11-10 14:41:54] [INFO] 第[244]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:41:54] [INFO] 载入商品信息界面
+[2017-11-10 14:41:55] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:41:55] [INFO] 没有查询到该商品[6970379610657]信息
+[2017-11-10 14:42:00] [INFO] 第[245]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:00] [INFO] 载入商品信息界面
+[2017-11-10 14:42:06] [INFO] 查询到信息:MICRO USB数据线 DT-M03 MICRO USB数据线
+[2017-11-10 14:42:06] [INFO] 更新数据库数据信息
+[2017-11-10 14:42:12] [INFO] 第[246]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:12] [INFO] 载入商品信息界面
+[2017-11-10 14:42:12] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:12] [INFO] 没有查询到该商品[88093644490821]信息
+[2017-11-10 14:42:18] [INFO] 第[247]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:18] [INFO] 载入商品信息界面
+[2017-11-10 14:42:19] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:19] [INFO] 没有查询到该商品[6970349281863]信息
+[2017-11-10 14:42:24] [INFO] 第[248]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:24] [INFO] 载入商品信息界面
+[2017-11-10 14:42:25] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:25] [INFO] 没有查询到该商品[65050012300]信息
+[2017-11-10 14:42:31] [INFO] 第[249]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:31] [INFO] 载入商品信息界面
+[2017-11-10 14:42:32] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:32] [INFO] 没有查询到该商品[6977012350253]信息
+[2017-11-10 14:42:38] [INFO] 第[250]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:38] [INFO] 载入商品信息界面
+[2017-11-10 14:42:39] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:39] [INFO] 没有查询到该商品[6954763100023]信息
+[2017-11-10 14:42:45] [INFO] 第[251]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:45] [INFO] 载入商品信息界面
+[2017-11-10 14:42:47] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:47] [INFO] 没有查询到该商品[6954763100023]信息
+[2017-11-10 14:42:53] [INFO] 第[252]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:53] [INFO] 载入商品信息界面
+[2017-11-10 14:42:54] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:42:54] [INFO] 没有查询到该商品[6954763100023]信息
+[2017-11-10 14:42:59] [INFO] 第[253]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:42:59] [INFO] 载入商品信息界面
+[2017-11-10 14:43:01] [INFO] 查询到信息:特种兵葱油压缩饼干
+[2017-11-10 14:43:01] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:06] [INFO] 第[254]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:06] [INFO] 载入商品信息界面
+[2017-11-10 14:43:08] [INFO] 查询到信息:特种兵芝麻压缩饼干
+[2017-11-10 14:43:08] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:13] [INFO] 第[255]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:13] [INFO] 载入商品信息界面
+[2017-11-10 14:43:15] [INFO] 查询到信息:布丁味卷心酥
+[2017-11-10 14:43:15] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:21] [INFO] 第[256]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:21] [INFO] 载入商品信息界面
+[2017-11-10 14:43:25] [INFO] 查询到信息:格力高百力滋白脱味装饰饼干65g
+[2017-11-10 14:43:25] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:30] [INFO] 第[257]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:30] [INFO] 载入商品信息界面
+[2017-11-10 14:43:33] [INFO] 查询到信息:格力高百力滋色拉味装饰饼干65g
+[2017-11-10 14:43:33] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:39] [INFO] 第[258]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:39] [INFO] 载入商品信息界面
+[2017-11-10 14:43:43] [INFO] 查询到信息:格力高双层百力滋草莓牛奶味装饰饼干45g
+[2017-11-10 14:43:43] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:49] [INFO] 第[259]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:49] [INFO] 载入商品信息界面
+[2017-11-10 14:43:51] [INFO] 查询到信息:格力高 百醇芝士蛋糕味注心饼干 48g
+[2017-11-10 14:43:51] [INFO] 更新数据库数据信息
+[2017-11-10 14:43:56] [INFO] 第[260]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:43:56] [INFO] 载入商品信息界面
+[2017-11-10 14:44:00] [INFO] 查询到信息:nox诺丝避孕套安全先生超薄螺纹香橙10片装2盒 安全套 原装进口
+[2017-11-10 14:44:00] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:06] [INFO] 第[261]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:06] [INFO] 载入商品信息界面
+[2017-11-10 14:44:07] [INFO] 查询到信息:nox诺丝避孕套安全先生超薄螺纹香橙10片装2盒 安全套 原装进口
+[2017-11-10 14:44:07] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:13] [INFO] 第[262]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:13] [INFO] 载入商品信息界面
+[2017-11-10 14:44:16] [INFO] 查询到信息:诺丝NOX草莓果香薄颗粒避孕套随身包3只装 计生成人用品
+[2017-11-10 14:44:16] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:21] [INFO] 第[263]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:21] [INFO] 载入商品信息界面
+[2017-11-10 14:44:22] [INFO] 查询到信息:诺丝NOX香柠果香加倍润滑薄平滑避孕套12只装 计生成人用品
+[2017-11-10 14:44:23] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:29] [INFO] 第[264]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:29] [INFO] 载入商品信息界面
+[2017-11-10 14:44:33] [INFO] 查询到信息:诺丝安全先生-天然乳胶避孕套超薄螺纹2片装+赠品3片
+[2017-11-10 14:44:33] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:39] [INFO] 第[265]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:39] [INFO] 载入商品信息界面
+[2017-11-10 14:44:41] [INFO] 查询到信息:诺丝NOX草莓果香薄颗粒避孕套随身包3只装 计生成人用品
+[2017-11-10 14:44:41] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:47] [INFO] 第[266]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:47] [INFO] 载入商品信息界面
+[2017-11-10 14:44:48] [INFO] 查询到信息:诺丝NOX草莓果香薄颗粒避孕套随身包3只装 计生成人用品
+[2017-11-10 14:44:48] [INFO] 更新数据库数据信息
+[2017-11-10 14:44:53] [INFO] 第[267]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:44:53] [INFO] 载入商品信息界面
+[2017-11-10 14:44:58] [INFO] 查询到信息:杜蕾斯避孕套凸点螺纹装 3片
+[2017-11-10 14:44:58] [INFO] 更新数据库数据信息
+[2017-11-10 14:45:04] [INFO] 第[268]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:04] [INFO] 载入商品信息界面
+[2017-11-10 14:45:08] [INFO] 查询到信息:香飘飘麦香味奶茶（调味茶固体饮料）
+[2017-11-10 14:45:08] [INFO] 更新数据库数据信息
+[2017-11-10 14:45:13] [INFO] 第[269]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:13] [INFO] 载入商品信息界面
+[2017-11-10 14:45:19] [INFO] 查询到信息:蒙牛 酸酸乳原味包250ml*24
+[2017-11-10 14:45:19] [INFO] 更新数据库数据信息
+[2017-11-10 14:45:25] [INFO] 第[270]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:25] [INFO] 载入商品信息界面
+[2017-11-10 14:45:26] [INFO] 查询到信息:香飘飘麦香味奶茶（调味茶固体饮料）
+[2017-11-10 14:45:26] [INFO] 更新数据库数据信息
+[2017-11-10 14:45:32] [INFO] 第[271]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:32] [INFO] 载入商品信息界面
+[2017-11-10 14:45:36] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:45:36] [INFO] 没有查询到该商品[6932913786211]信息
+[2017-11-10 14:45:42] [INFO] 第[272]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:42] [INFO] 载入商品信息界面
+[2017-11-10 14:45:43] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:45:43] [INFO] 没有查询到该商品[6932913786211]信息
+[2017-11-10 14:45:49] [INFO] 第[273]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:49] [INFO] 载入商品信息界面
+[2017-11-10 14:45:50] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:45:50] [INFO] 没有查询到该商品[6932913786211]信息
+[2017-11-10 14:45:56] [INFO] 第[274]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:45:56] [INFO] 载入商品信息界面
+[2017-11-10 14:45:57] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:45:57] [INFO] 没有查询到该商品[6950183135669]信息
+[2017-11-10 14:46:02] [INFO] 第[275]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:02] [INFO] 载入商品信息界面
+[2017-11-10 14:46:03] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:46:03] [INFO] 没有查询到该商品[6950183135959]信息
+[2017-11-10 14:46:08] [INFO] 第[276]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:08] [INFO] 载入商品信息界面
+[2017-11-10 14:46:09] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:46:09] [INFO] 没有查询到该商品[6931323004229]信息
+[2017-11-10 14:46:15] [INFO] 第[277]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:15] [INFO] 载入商品信息界面
+[2017-11-10 14:46:15] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:46:15] [INFO] 没有查询到该商品[6932913786211]信息
+[2017-11-10 14:46:21] [INFO] 第[278]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:21] [INFO] 载入商品信息界面
+[2017-11-10 14:46:22] [INFO] 异常[getWebElement] exception:Unable to locate element: div.graph-title
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'XXP0068', ip: '192.168.79.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.72n2eXDhOl38, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.2, platformVersion=10.0, moz:processID=19468, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e13bd109-8700-4fac-9d2c-53b81436c3e5
+*** Element info: {Using=css selector, value=div.graph-title}
+[2017-11-10 14:46:22] [INFO] 没有查询到该商品[6932913786211]信息
+[2017-11-10 14:46:27] [INFO] 第[279]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:27] [INFO] 载入商品信息界面
+[2017-11-10 14:46:31] [INFO] 查询到信息:真露（Jinro）韩国20.1度竹炭酒360ml
+[2017-11-10 14:46:31] [INFO] 更新数据库数据信息
+[2017-11-10 14:46:37] [INFO] 第[280]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:37] [INFO] 载入商品信息界面
+[2017-11-10 14:46:47] [INFO] 查询到信息:雪花啤酒
+[2017-11-10 14:46:47] [INFO] 更新数据库数据信息
+[2017-11-10 14:46:53] [INFO] 第[281]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:46:53] [INFO] 载入商品信息界面
+[2017-11-10 14:46:55] [INFO] 查询到信息:自营 韩国 Jinro新真露19度竹炭酒360ml
+[2017-11-10 14:46:55] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:01] [INFO] 第[282]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:01] [INFO] 载入商品信息界面
+[2017-11-10 14:47:03] [INFO] 查询到信息:自营 韩国 Jinro新真露19度竹炭酒360ml
+[2017-11-10 14:47:03] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:08] [INFO] 第[283]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:08] [INFO] 载入商品信息界面
+[2017-11-10 14:47:10] [INFO] 查询到信息:锐澳紫葡萄味预调酒
+[2017-11-10 14:47:10] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:16] [INFO] 第[284]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:16] [INFO] 载入商品信息界面
+[2017-11-10 14:47:18] [INFO] 查询到信息:自营 韩国 Jinro新真露19度竹炭酒360ml
+[2017-11-10 14:47:18] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:24] [INFO] 第[285]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:24] [INFO] 载入商品信息界面
+[2017-11-10 14:47:26] [INFO] 查询到信息:自营 韩国 Jinro新真露19度竹炭酒360ml
+[2017-11-10 14:47:26] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:31] [INFO] 第[286]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:31] [INFO] 载入商品信息界面
+[2017-11-10 14:47:34] [INFO] 查询到信息:锐澳青柠味预调酒
+[2017-11-10 14:47:34] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:40] [INFO] 第[287]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:40] [INFO] 载入商品信息界面
+[2017-11-10 14:47:42] [INFO] 查询到信息:盼盼 麦香鸡味块105g 烧烤牛排味
+[2017-11-10 14:47:42] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:48] [INFO] 第[288]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:48] [INFO] 载入商品信息界面
+[2017-11-10 14:47:49] [INFO] 查询到信息:盼盼香辣鸡味块105克
+[2017-11-10 14:47:50] [INFO] 更新数据库数据信息
+[2017-11-10 14:47:55] [INFO] 第[289]条商品信息发现异常，开始抓取数据...
+[2017-11-10 14:47:55] [INFO] 载入商品信息界面
