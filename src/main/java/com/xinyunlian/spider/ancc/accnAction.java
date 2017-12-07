@@ -112,7 +112,7 @@ public class accnAction{
                 log.error("获取数据异常："+ex.getMessage());
                 dto = null;
             }
-            saveData(model.getBarcode(), dto, i + 1);
+            saveData(model, dto, i + 1);
         }
     }
 
@@ -160,7 +160,7 @@ public class accnAction{
         return goodsMapper.selectByExample(queryModel).size()>0;
     }
 
-    public boolean saveData(String barcode,RetDto dto,int index)
+    public boolean saveData(GoodsInfoDto goods,RetDto dto,int index)
     {
         log.info("["+index+"]存储数据...");
         GoodsModel goodsModel = new GoodsModel();
@@ -169,9 +169,10 @@ public class accnAction{
         try
         {
             log.info("[" + index + "]组织数据");
-            goodsModel.setProductCode(barcode);
+            goodsModel.setProductCode(goods.getBarcode());
             goodsModel.setShopId("");
             goodsModel.setCreateDate(new Date());
+            goodsModel.setType(goods.getIsTobacco());
             if(dto==null)
             {
                 goodsModel.setStatus("3");
@@ -220,7 +221,7 @@ public class accnAction{
                         model.setId(null);
                         model.setImageDescription(entity.getImageDescription());
                         model.setImageUrl(entity.getImageurl());
-                        model.setProductCode(barcode);
+                        model.setProductCode(goods.getBarcode());
                         imageLst.add(model);
                     }
                 }
@@ -233,7 +234,7 @@ public class accnAction{
                         model.setId(null);
                         model.setAttName(entity.getAttName());
                         model.setAttValue(entity.getAttValue());
-                        model.setProductCode(barcode);
+                        model.setProductCode(goods.getBarcode());
                         attrLst.add(model);
                     }
                 }

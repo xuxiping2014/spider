@@ -35,6 +35,8 @@ public class GoodsModel {
 
     private String itemPackagingmaterialCode;
 
+    private String type;
+
     private String firmName;
 
     private String firmAddress;
@@ -205,6 +207,14 @@ public class GoodsModel {
 
     public void setItemPackagingmaterialCode(String itemPackagingmaterialCode) {
         this.itemPackagingmaterialCode = itemPackagingmaterialCode == null ? null : itemPackagingmaterialCode.trim();
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
     }
 
     public String getFirmName() {

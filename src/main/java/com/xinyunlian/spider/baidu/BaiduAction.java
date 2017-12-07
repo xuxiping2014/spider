@@ -102,8 +102,6 @@ public class BaiduAction extends BaseCreepAction {
                 log("第[" + i + "]条商品信息查询异常，跳过到下一条记录...");
             }
         }
-
-
-
     }
+
 }

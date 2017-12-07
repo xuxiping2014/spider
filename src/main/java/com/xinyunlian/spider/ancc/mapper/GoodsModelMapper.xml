@@ -18,15 +18,16 @@
     <result column="item_classcode" property="itemClasscode" jdbcType="VARCHAR" />
     <result column="item_shortdescription" property="itemShortdescription" jdbcType="VARCHAR" />
     <result column="item_packagingmaterial_code" property="itemPackagingmaterialCode" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
     <result column="firm_name" property="firmName" jdbcType="VARCHAR" />
     <result column="firm_address" property="firmAddress" jdbcType="VARCHAR" />
     <result column="firm_status" property="firmStatus" jdbcType="VARCHAR" />
     <result column="firm_contactman" property="firmContactman" jdbcType="VARCHAR" />
     <result column="firm_contactphone" property="firmContactphone" jdbcType="VARCHAR" />
-    <result column="firm_login_date" property="firmLoginDate" jdbcType="DATE" />
-    <result column="firm_valid_date" property="firmValidDate" jdbcType="DATE" />
-    <result column="firm_logout_date" property="firmLogoutDate" jdbcType="DATE" />
-    <result column="firm_logout_date1" property="firmLogoutDate1" jdbcType="DATE" />
+    <result column="firm_login_date" property="firmLoginDate" jdbcType="TIMESTAMP" />
+    <result column="firm_valid_date" property="firmValidDate" jdbcType="TIMESTAMP" />
+    <result column="firm_logout_date" property="firmLogoutDate" jdbcType="TIMESTAMP" />
+    <result column="firm_logout_date1" property="firmLogoutDate1" jdbcType="TIMESTAMP" />
     <result column="qualification_count" property="qualificationCount" jdbcType="VARCHAR" />
     <result column="product_ex" property="productEx" jdbcType="VARCHAR" />
     <result column="alerm_count" property="alermCount" jdbcType="VARCHAR" />
@@ -38,7 +39,7 @@
     <result column="batch" property="batch" jdbcType="VARCHAR" />
     <result column="honest_count" property="honestCount" jdbcType="VARCHAR" />
     <result column="shop_id" property="shopId" jdbcType="VARCHAR" />
-    <result column="create_date" property="createDate" jdbcType="DATE" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
     <result column="status" property="status" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -103,7 +104,7 @@
     id, product_code, item_name, item_specification, brand_name, item_packaging_typecode, 
     item_netcontent, item_description, item_width, item_height, item_depth, item_grossweight, 
     item_netweight, item_classcode, item_shortdescription, item_packagingmaterial_code, 
-    firm_name, firm_address, firm_status, firm_contactman, firm_contactphone, firm_login_date, 
+    type, firm_name, firm_address, firm_status, firm_contactman, firm_contactphone, firm_login_date, 
     firm_valid_date, firm_logout_date, firm_logout_date1, qualification_count, product_ex, 
     alerm_count, keepon_record, recall_count, productFangWei, diffYearsMonthsDays, qs, 
     batch, honest_count, shop_id, create_date, status
@@ -145,27 +146,29 @@
       item_netcontent, item_description, item_width, 
       item_height, item_depth, item_grossweight, 
       item_netweight, item_classcode, item_shortdescription, 
-      item_packagingmaterial_code, firm_name, firm_address, 
-      firm_status, firm_contactman, firm_contactphone, 
-      firm_login_date, firm_valid_date, firm_logout_date, 
-      firm_logout_date1, qualification_count, product_ex, 
-      alerm_count, keepon_record, recall_count, 
-      productFangWei, diffYearsMonthsDays, qs, 
-      batch, honest_count, shop_id, 
-      create_date, status)
+      item_packagingmaterial_code, type, firm_name, 
+      firm_address, firm_status, firm_contactman, 
+      firm_contactphone, firm_login_date, firm_valid_date, 
+      firm_logout_date, firm_logout_date1, qualification_count, 
+      product_ex, alerm_count, keepon_record, 
+      recall_count, productFangWei, diffYearsMonthsDays, 
+      qs, batch, honest_count, 
+      shop_id, create_date, status
+      )
     values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=VARCHAR}, #{itemName,jdbcType=VARCHAR}, 
       #{itemSpecification,jdbcType=VARCHAR}, #{brandName,jdbcType=VARCHAR}, #{itemPackagingTypecode,jdbcType=VARCHAR}, 
       #{itemNetcontent,jdbcType=VARCHAR}, #{itemDescription,jdbcType=VARCHAR}, #{itemWidth,jdbcType=VARCHAR}, 
       #{itemHeight,jdbcType=VARCHAR}, #{itemDepth,jdbcType=VARCHAR}, #{itemGrossweight,jdbcType=VARCHAR}, 
       #{itemNetweight,jdbcType=VARCHAR}, #{itemClasscode,jdbcType=VARCHAR}, #{itemShortdescription,jdbcType=VARCHAR}, 
-      #{itemPackagingmaterialCode,jdbcType=VARCHAR}, #{firmName,jdbcType=VARCHAR}, #{firmAddress,jdbcType=VARCHAR}, 
-      #{firmStatus,jdbcType=VARCHAR}, #{firmContactman,jdbcType=VARCHAR}, #{firmContactphone,jdbcType=VARCHAR}, 
-      #{firmLoginDate,jdbcType=DATE}, #{firmValidDate,jdbcType=DATE}, #{firmLogoutDate,jdbcType=DATE}, 
-      #{firmLogoutDate1,jdbcType=DATE}, #{qualificationCount,jdbcType=VARCHAR}, #{productEx,jdbcType=VARCHAR}, 
-      #{alermCount,jdbcType=VARCHAR}, #{keeponRecord,jdbcType=VARCHAR}, #{recallCount,jdbcType=VARCHAR}, 
-      #{productfangwei,jdbcType=VARCHAR}, #{diffyearsmonthsdays,jdbcType=VARCHAR}, #{qs,jdbcType=VARCHAR}, 
-      #{batch,jdbcType=VARCHAR}, #{honestCount,jdbcType=VARCHAR}, #{shopId,jdbcType=VARCHAR}, 
-      #{createDate,jdbcType=DATE}, #{status,jdbcType=VARCHAR})
+      #{itemPackagingmaterialCode,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{firmName,jdbcType=VARCHAR}, 
+      #{firmAddress,jdbcType=VARCHAR}, #{firmStatus,jdbcType=VARCHAR}, #{firmContactman,jdbcType=VARCHAR}, 
+      #{firmContactphone,jdbcType=VARCHAR}, #{firmLoginDate,jdbcType=TIMESTAMP}, #{firmValidDate,jdbcType=TIMESTAMP}, 
+      #{firmLogoutDate,jdbcType=TIMESTAMP}, #{firmLogoutDate1,jdbcType=TIMESTAMP}, #{qualificationCount,jdbcType=VARCHAR}, 
+      #{productEx,jdbcType=VARCHAR}, #{alermCount,jdbcType=VARCHAR}, #{keeponRecord,jdbcType=VARCHAR}, 
+      #{recallCount,jdbcType=VARCHAR}, #{productfangwei,jdbcType=VARCHAR}, #{diffyearsmonthsdays,jdbcType=VARCHAR}, 
+      #{qs,jdbcType=VARCHAR}, #{batch,jdbcType=VARCHAR}, #{honestCount,jdbcType=VARCHAR}, 
+      #{shopId,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{status,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.xinyunlian.spider.ancc.model.GoodsModel" >
     insert into p_goods
@@ -217,6 +220,9 @@
       </if>
       <if test="itemPackagingmaterialCode != null" >
         item_packagingmaterial_code,
+      </if>
+      <if test="type != null" >
+        type,
       </if>
       <if test="firmName != null" >
         firm_name,
@@ -334,6 +340,9 @@
       <if test="itemPackagingmaterialCode != null" >
         #{itemPackagingmaterialCode,jdbcType=VARCHAR},
       </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
       <if test="firmName != null" >
         #{firmName,jdbcType=VARCHAR},
       </if>
@@ -350,16 +359,16 @@
         #{firmContactphone,jdbcType=VARCHAR},
       </if>
       <if test="firmLoginDate != null" >
-        #{firmLoginDate,jdbcType=DATE},
+        #{firmLoginDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmValidDate != null" >
-        #{firmValidDate,jdbcType=DATE},
+        #{firmValidDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmLogoutDate != null" >
-        #{firmLogoutDate,jdbcType=DATE},
+        #{firmLogoutDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmLogoutDate1 != null" >
-        #{firmLogoutDate1,jdbcType=DATE},
+        #{firmLogoutDate1,jdbcType=TIMESTAMP},
       </if>
       <if test="qualificationCount != null" >
         #{qualificationCount,jdbcType=VARCHAR},
@@ -395,7 +404,7 @@
         #{shopId,jdbcType=VARCHAR},
       </if>
       <if test="createDate != null" >
-        #{createDate,jdbcType=DATE},
+        #{createDate,jdbcType=TIMESTAMP},
       </if>
       <if test="status != null" >
         #{status,jdbcType=VARCHAR},
@@ -459,6 +468,9 @@
       <if test="record.itemPackagingmaterialCode != null" >
         item_packagingmaterial_code = #{record.itemPackagingmaterialCode,jdbcType=VARCHAR},
       </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
       <if test="record.firmName != null" >
         firm_name = #{record.firmName,jdbcType=VARCHAR},
       </if>
@@ -475,16 +487,16 @@
         firm_contactphone = #{record.firmContactphone,jdbcType=VARCHAR},
       </if>
       <if test="record.firmLoginDate != null" >
-        firm_login_date = #{record.firmLoginDate,jdbcType=DATE},
+        firm_login_date = #{record.firmLoginDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.firmValidDate != null" >
-        firm_valid_date = #{record.firmValidDate,jdbcType=DATE},
+        firm_valid_date = #{record.firmValidDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.firmLogoutDate != null" >
-        firm_logout_date = #{record.firmLogoutDate,jdbcType=DATE},
+        firm_logout_date = #{record.firmLogoutDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.firmLogoutDate1 != null" >
-        firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=DATE},
+        firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=TIMESTAMP},
       </if>
       <if test="record.qualificationCount != null" >
         qualification_count = #{record.qualificationCount,jdbcType=VARCHAR},
@@ -520,7 +532,7 @@
         shop_id = #{record.shopId,jdbcType=VARCHAR},
       </if>
       <if test="record.createDate != null" >
-        create_date = #{record.createDate,jdbcType=DATE},
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.status != null" >
         status = #{record.status,jdbcType=VARCHAR},
@@ -548,15 +560,16 @@
       item_classcode = #{record.itemClasscode,jdbcType=VARCHAR},
       item_shortdescription = #{record.itemShortdescription,jdbcType=VARCHAR},
       item_packagingmaterial_code = #{record.itemPackagingmaterialCode,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR},
       firm_name = #{record.firmName,jdbcType=VARCHAR},
       firm_address = #{record.firmAddress,jdbcType=VARCHAR},
       firm_status = #{record.firmStatus,jdbcType=VARCHAR},
       firm_contactman = #{record.firmContactman,jdbcType=VARCHAR},
       firm_contactphone = #{record.firmContactphone,jdbcType=VARCHAR},
-      firm_login_date = #{record.firmLoginDate,jdbcType=DATE},
-      firm_valid_date = #{record.firmValidDate,jdbcType=DATE},
-      firm_logout_date = #{record.firmLogoutDate,jdbcType=DATE},
-      firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=DATE},
+      firm_login_date = #{record.firmLoginDate,jdbcType=TIMESTAMP},
+      firm_valid_date = #{record.firmValidDate,jdbcType=TIMESTAMP},
+      firm_logout_date = #{record.firmLogoutDate,jdbcType=TIMESTAMP},
+      firm_logout_date1 = #{record.firmLogoutDate1,jdbcType=TIMESTAMP},
       qualification_count = #{record.qualificationCount,jdbcType=VARCHAR},
       product_ex = #{record.productEx,jdbcType=VARCHAR},
       alerm_count = #{record.alermCount,jdbcType=VARCHAR},
@@ -568,7 +581,7 @@
       batch = #{record.batch,jdbcType=VARCHAR},
       honest_count = #{record.honestCount,jdbcType=VARCHAR},
       shop_id = #{record.shopId,jdbcType=VARCHAR},
-      create_date = #{record.createDate,jdbcType=DATE},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
       status = #{record.status,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -622,6 +635,9 @@
       <if test="itemPackagingmaterialCode != null" >
         item_packagingmaterial_code = #{itemPackagingmaterialCode,jdbcType=VARCHAR},
       </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
       <if test="firmName != null" >
         firm_name = #{firmName,jdbcType=VARCHAR},
       </if>
@@ -638,16 +654,16 @@
         firm_contactphone = #{firmContactphone,jdbcType=VARCHAR},
       </if>
       <if test="firmLoginDate != null" >
-        firm_login_date = #{firmLoginDate,jdbcType=DATE},
+        firm_login_date = #{firmLoginDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmValidDate != null" >
-        firm_valid_date = #{firmValidDate,jdbcType=DATE},
+        firm_valid_date = #{firmValidDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmLogoutDate != null" >
-        firm_logout_date = #{firmLogoutDate,jdbcType=DATE},
+        firm_logout_date = #{firmLogoutDate,jdbcType=TIMESTAMP},
       </if>
       <if test="firmLogoutDate1 != null" >
-        firm_logout_date1 = #{firmLogoutDate1,jdbcType=DATE},
+        firm_logout_date1 = #{firmLogoutDate1,jdbcType=TIMESTAMP},
       </if>
       <if test="qualificationCount != null" >
         qualification_count = #{qualificationCount,jdbcType=VARCHAR},
@@ -683,7 +699,7 @@
         shop_id = #{shopId,jdbcType=VARCHAR},
       </if>
       <if test="createDate != null" >
-        create_date = #{createDate,jdbcType=DATE},
+        create_date = #{createDate,jdbcType=TIMESTAMP},
       </if>
       <if test="status != null" >
         status = #{status,jdbcType=VARCHAR},
@@ -708,15 +724,16 @@
       item_classcode = #{itemClasscode,jdbcType=VARCHAR},
       item_shortdescription = #{itemShortdescription,jdbcType=VARCHAR},
       item_packagingmaterial_code = #{itemPackagingmaterialCode,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
       firm_name = #{firmName,jdbcType=VARCHAR},
       firm_address = #{firmAddress,jdbcType=VARCHAR},
       firm_status = #{firmStatus,jdbcType=VARCHAR},
       firm_contactman = #{firmContactman,jdbcType=VARCHAR},
       firm_contactphone = #{firmContactphone,jdbcType=VARCHAR},
-      firm_login_date = #{firmLoginDate,jdbcType=DATE},
-      firm_valid_date = #{firmValidDate,jdbcType=DATE},
-      firm_logout_date = #{firmLogoutDate,jdbcType=DATE},
-      firm_logout_date1 = #{firmLogoutDate1,jdbcType=DATE},
+      firm_login_date = #{firmLoginDate,jdbcType=TIMESTAMP},
+      firm_valid_date = #{firmValidDate,jdbcType=TIMESTAMP},
+      firm_logout_date = #{firmLogoutDate,jdbcType=TIMESTAMP},
+      firm_logout_date1 = #{firmLogoutDate1,jdbcType=TIMESTAMP},
       qualification_count = #{qualificationCount,jdbcType=VARCHAR},
       product_ex = #{productEx,jdbcType=VARCHAR},
       alerm_count = #{alermCount,jdbcType=VARCHAR},
@@ -728,7 +745,7 @@
       batch = #{batch,jdbcType=VARCHAR},
       honest_count = #{honestCount,jdbcType=VARCHAR},
       shop_id = #{shopId,jdbcType=VARCHAR},
-      create_date = #{createDate,jdbcType=DATE},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
       status = #{status,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>

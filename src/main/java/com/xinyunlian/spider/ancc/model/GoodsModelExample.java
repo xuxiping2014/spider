@@ -2,7 +2,6 @@ package com.xinyunlian.spider.ancc.model;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 
 public class GoodsModelExample {
@@ -104,32 +103,6 @@ public class GoodsModelExample {
                 throw new RuntimeException("Between values for " + property + " cannot be null");
             }
             criteria.add(new Criterion(condition, value1, value2));
-        }
-
-        protected void addCriterionForJDBCDate(String condition, Date value, String property) {
-            if (value == null) {
-                throw new RuntimeException("Value for " + property + " cannot be null");
-            }
-            addCriterion(condition, new java.sql.Date(value.getTime()), property);
-        }
-
-        protected void addCriterionForJDBCDate(String condition, List<Date> values, String property) {
-            if (values == null || values.size() == 0) {
-                throw new RuntimeException("Value list for " + property + " cannot be null or empty");
-            }
-            List<java.sql.Date> dateList = new ArrayList<java.sql.Date>();
-            Iterator<Date> iter = values.iterator();
-            while (iter.hasNext()) {
-                dateList.add(new java.sql.Date(iter.next().getTime()));
-            }
-            addCriterion(condition, dateList, property);
-        }
-
-        protected void addCriterionForJDBCDate(String condition, Date value1, Date value2, String property) {
-            if (value1 == null || value2 == null) {
-                throw new RuntimeException("Between values for " + property + " cannot be null");
-            }
-            addCriterion(condition, new java.sql.Date(value1.getTime()), new java.sql.Date(value2.getTime()), property);
         }
 
         public Criteria andIdIsNull() {
@@ -1242,6 +1215,76 @@ public class GoodsModelExample {
             return (Criteria) this;
         }
 
+        public Criteria andTypeIsNull() {
+            addCriterion("type is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIsNotNull() {
+            addCriterion("type is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeEqualTo(String value) {
+            addCriterion("type =", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotEqualTo(String value) {
+            addCriterion("type <>", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThan(String value) {
+            addCriterion("type >", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThanOrEqualTo(String value) {
+            addCriterion("type >=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThan(String value) {
+            addCriterion("type <", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThanOrEqualTo(String value) {
+            addCriterion("type <=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLike(String value) {
+            addCriterion("type like", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotLike(String value) {
+            addCriterion("type not like", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIn(List<String> values) {
+            addCriterion("type in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotIn(List<String> values) {
+            addCriterion("type not in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeBetween(String value1, String value2) {
+            addCriterion("type between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotBetween(String value1, String value2) {
+            addCriterion("type not between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
         public Criteria andFirmNameIsNull() {
             addCriterion("firm_name is null");
             return (Criteria) this;
@@ -1603,52 +1646,52 @@ public class GoodsModelExample {
         }
 
         public Criteria andFirmLoginDateEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_login_date =", value, "firmLoginDate");
+            addCriterion("firm_login_date =", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateNotEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_login_date <>", value, "firmLoginDate");
+            addCriterion("firm_login_date <>", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateGreaterThan(Date value) {
-            addCriterionForJDBCDate("firm_login_date >", value, "firmLoginDate");
+            addCriterion("firm_login_date >", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_login_date >=", value, "firmLoginDate");
+            addCriterion("firm_login_date >=", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateLessThan(Date value) {
-            addCriterionForJDBCDate("firm_login_date <", value, "firmLoginDate");
+            addCriterion("firm_login_date <", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_login_date <=", value, "firmLoginDate");
+            addCriterion("firm_login_date <=", value, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_login_date in", values, "firmLoginDate");
+            addCriterion("firm_login_date in", values, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateNotIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_login_date not in", values, "firmLoginDate");
+            addCriterion("firm_login_date not in", values, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_login_date between", value1, value2, "firmLoginDate");
+            addCriterion("firm_login_date between", value1, value2, "firmLoginDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLoginDateNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_login_date not between", value1, value2, "firmLoginDate");
+            addCriterion("firm_login_date not between", value1, value2, "firmLoginDate");
             return (Criteria) this;
         }
 
@@ -1663,52 +1706,52 @@ public class GoodsModelExample {
         }
 
         public Criteria andFirmValidDateEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_valid_date =", value, "firmValidDate");
+            addCriterion("firm_valid_date =", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateNotEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_valid_date <>", value, "firmValidDate");
+            addCriterion("firm_valid_date <>", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateGreaterThan(Date value) {
-            addCriterionForJDBCDate("firm_valid_date >", value, "firmValidDate");
+            addCriterion("firm_valid_date >", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_valid_date >=", value, "firmValidDate");
+            addCriterion("firm_valid_date >=", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateLessThan(Date value) {
-            addCriterionForJDBCDate("firm_valid_date <", value, "firmValidDate");
+            addCriterion("firm_valid_date <", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_valid_date <=", value, "firmValidDate");
+            addCriterion("firm_valid_date <=", value, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_valid_date in", values, "firmValidDate");
+            addCriterion("firm_valid_date in", values, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateNotIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_valid_date not in", values, "firmValidDate");
+            addCriterion("firm_valid_date not in", values, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_valid_date between", value1, value2, "firmValidDate");
+            addCriterion("firm_valid_date between", value1, value2, "firmValidDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmValidDateNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_valid_date not between", value1, value2, "firmValidDate");
+            addCriterion("firm_valid_date not between", value1, value2, "firmValidDate");
             return (Criteria) this;
         }
 
@@ -1723,52 +1766,52 @@ public class GoodsModelExample {
         }
 
         public Criteria andFirmLogoutDateEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date =", value, "firmLogoutDate");
+            addCriterion("firm_logout_date =", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateNotEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date <>", value, "firmLogoutDate");
+            addCriterion("firm_logout_date <>", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateGreaterThan(Date value) {
-            addCriterionForJDBCDate("firm_logout_date >", value, "firmLogoutDate");
+            addCriterion("firm_logout_date >", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date >=", value, "firmLogoutDate");
+            addCriterion("firm_logout_date >=", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateLessThan(Date value) {
-            addCriterionForJDBCDate("firm_logout_date <", value, "firmLogoutDate");
+            addCriterion("firm_logout_date <", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date <=", value, "firmLogoutDate");
+            addCriterion("firm_logout_date <=", value, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_logout_date in", values, "firmLogoutDate");
+            addCriterion("firm_logout_date in", values, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateNotIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_logout_date not in", values, "firmLogoutDate");
+            addCriterion("firm_logout_date not in", values, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_logout_date between", value1, value2, "firmLogoutDate");
+            addCriterion("firm_logout_date between", value1, value2, "firmLogoutDate");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDateNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_logout_date not between", value1, value2, "firmLogoutDate");
+            addCriterion("firm_logout_date not between", value1, value2, "firmLogoutDate");
             return (Criteria) this;
         }
 
@@ -1783,52 +1826,52 @@ public class GoodsModelExample {
         }
 
         public Criteria andFirmLogoutDate1EqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 =", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 =", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1NotEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 <>", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 <>", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1GreaterThan(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 >", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 >", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1GreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 >=", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 >=", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1LessThan(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 <", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 <", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1LessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("firm_logout_date1 <=", value, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 <=", value, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1In(List<Date> values) {
-            addCriterionForJDBCDate("firm_logout_date1 in", values, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 in", values, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1NotIn(List<Date> values) {
-            addCriterionForJDBCDate("firm_logout_date1 not in", values, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 not in", values, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1Between(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_logout_date1 between", value1, value2, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 between", value1, value2, "firmLogoutDate1");
             return (Criteria) this;
         }
 
         public Criteria andFirmLogoutDate1NotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("firm_logout_date1 not between", value1, value2, "firmLogoutDate1");
+            addCriterion("firm_logout_date1 not between", value1, value2, "firmLogoutDate1");
             return (Criteria) this;
         }
 
@@ -2613,52 +2656,52 @@ public class GoodsModelExample {
         }
 
         public Criteria andCreateDateEqualTo(Date value) {
-            addCriterionForJDBCDate("create_date =", value, "createDate");
+            addCriterion("create_date =", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateNotEqualTo(Date value) {
-            addCriterionForJDBCDate("create_date <>", value, "createDate");
+            addCriterion("create_date <>", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateGreaterThan(Date value) {
-            addCriterionForJDBCDate("create_date >", value, "createDate");
+            addCriterion("create_date >", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("create_date >=", value, "createDate");
+            addCriterion("create_date >=", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateLessThan(Date value) {
-            addCriterionForJDBCDate("create_date <", value, "createDate");
+            addCriterion("create_date <", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("create_date <=", value, "createDate");
+            addCriterion("create_date <=", value, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateIn(List<Date> values) {
-            addCriterionForJDBCDate("create_date in", values, "createDate");
+            addCriterion("create_date in", values, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateNotIn(List<Date> values) {
-            addCriterionForJDBCDate("create_date not in", values, "createDate");
+            addCriterion("create_date not in", values, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("create_date between", value1, value2, "createDate");
+            addCriterion("create_date between", value1, value2, "createDate");
             return (Criteria) this;
         }
 
         public Criteria andCreateDateNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("create_date not between", value1, value2, "createDate");
+            addCriterion("create_date not between", value1, value2, "createDate");
             return (Criteria) this;
         }
 
